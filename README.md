@@ -7,9 +7,9 @@
 
 > Vue Component for draggable and resizable elements.
 
-## Table of Contents
+## 目录
 
-* [Features](#features)
+* [特性](#features)
 * [Install and basic usage](#install-and-basic-usage)
   * [Props](#props)
   * [Events](#events)
@@ -20,16 +20,16 @@
 
 [Demo](http://kirillmurashov.com/vue-drag-resize)
 
-### Features
+### 特性
 
-* A lightweight, no-dependency
-* All props are reactive
-* Support touch events
-* Use draggable, resizable or both
-* Define sticks for resizing
-* Save aspect ratio for resizable components
-* Restrict size and movement to parent element
-* Restrict drag to vertical or horizontal axis
+* 轻巧，无依赖
+* 所有道具都是反应性的
+* 支持触摸事件
+* 结合使用可拖动，可调整大小或同时使用
+* 定义棒以调整大小
+* 为可调整大小的组件保存长宽比
+* 限制大小和移动到父元素
+* 限制拖动到垂直或水平轴
 
 ## Install and basic usage
 
