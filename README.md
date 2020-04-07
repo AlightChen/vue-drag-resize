@@ -9,10 +9,10 @@
 
 ## 目录
 
-* [特性](#features)
-* [Install and basic usage](#install-and-basic-usage)
-  * [Props](#props)
-  * [Events](#events)
+* [特性](#特性)
+* [安装和基本用法](#安装和基本用法)
+  * [属性](#属性)
+  * [事件](#事件)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -31,14 +31,14 @@
 * 限制大小和移动到父元素
 * 限制拖动到垂直或水平轴
 
-## Install and basic usage
+## 安装和基本用法
 
 ```bash
 $ npm i -s vue-drag-resize
 ```
 
 
-Register the component:
+注册组件：
 
 ```js
 import Vue from 'vue'
@@ -47,7 +47,7 @@ import VueDragResize from 'vue-drag-resize'
 Vue.component('vue-drag-resize', VueDragResize)
 ```
 
-Use the component:
+使用组件：
 
 ```vue
 <template>
@@ -91,7 +91,7 @@ Use the component:
 </script>
 ```
 
-### Props
+### 属性
 
 #### isActive
 Type: `Boolean`<br>
@@ -374,7 +374,7 @@ Defines a selector that should be used to prevent drag initialization.
 
 ---
 
-### Events
+### 事件
 
 #### clicked
 
