@@ -411,10 +411,10 @@ Required: `false`<br>
 Parameters: `object`
 ```javascript
 {
-    left: Number, //the X position of the component
-    top: Number, //the Y position of the component
-    width: Number, //the width of the component
-    height: Number //the height of the component
+    left: Number, //组件的X位置 
+    top: Number, //组件的Y位置 
+    width: Number, //组件的宽度
+    height: Number //组件的高度
 }
 ```
 
@@ -430,10 +430,10 @@ Required: `false`<br>
 Parameters: `object`
 ```javascript
 {
-    left: Number, //the X position of the component
-    top: Number, //the Y position of the component
-    width: Number, //the width of the component
-    height: Number //the height of the component
+    left: Number, //组件的X位置
+    top: Number, //组件的Y位置
+    width: Number, //组件的宽度
+    height: Number //组件的高度
 }
 ```
 
@@ -449,10 +449,10 @@ Required: `false`<br>
 Parameters: `object`
 ```javascript
 {
-    left: Number, //the X position of the component
-    top: Number, //the Y position of the component
-    width: Number, //the width of the component
-    height: Number //the height of the component
+    left: Number, //组件的X位置
+    top: Number, //组件的Y位置
+    width: Number, //组件的宽度
+    height: Number //组件的高度
 }
 ```
 
@@ -468,10 +468,10 @@ Required: `false`<br>
 Parameters: `object`
 ```javascript
 {
-    left: Number, //the X position of the component
-    top: Number, //the Y position of the component
-    width: Number, //the width of the component
-    height: Number //the height of the component
+    left: Number, //组件的X位置
+    top: Number, //组件的Y位置
+    width: Number, //组件的宽度
+    height: Number //组件的高度
 }
 ```
 
