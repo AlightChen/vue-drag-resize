@@ -186,7 +186,7 @@ Type: `Boolean`<br>
 Required: `false`<br>
 Default: `false`
 
-Limits the scope of the component's change to its parent size.
+将组件更改的范围限制为其父大小.
 
 ```html
 <vue-drag-resize :parentLimitation="true">
@@ -197,7 +197,7 @@ Type: `Boolean`<br>
 Required: `false`<br>
 Default: `false`
 
-Determines whether the component should move and resize in predefined steps.
+确定组件是否应按预定义的步骤移动和调整大小.
 
 ```html
 <vue-drag-resize :snapToGrid="true">
@@ -208,7 +208,7 @@ Type: `Number`<br>
 Required: `false`<br>
 Default: `50`
 
-Define the grid step size for the horizontal axis. Both sides of the component (left and right) will snap to this step.
+定义水平轴的网格步长。组件的两侧（左侧和右侧）都将对齐此步骤.
 
 ```html
 <vue-drag-resize :snapToGrid="true" :gridX="20">
@@ -219,7 +219,7 @@ Type: `Number`<br>
 Required: `false`<br>
 Default: `50`
 
-Define the grid step size for the vertical axis. Both sides of the component (top and bottom) will snap to this step.
+定义垂直轴的网格步长。组件的两侧（顶部和底部）都将对齐此步骤.
 
 ```html
 <vue-drag-resize :snapToGrid="true" :gridY="20">
@@ -230,7 +230,7 @@ Type: `Boolean`<br>
 Required: `false`<br>
 Default: `false`
 
-Determines whether the component should retain its proportions.
+确定组件是否应保留其比例.
 
 ```html
 <vue-drag-resize :aspectRatio="false">
@@ -241,7 +241,7 @@ Type: `Number`<br>
 Required: `false`<br>
 Default: `200`
 
-Define the initial width of the component.
+定义组件的初始宽度.
 
 ```html
 <vue-drag-resize :w="200">
@@ -252,7 +252,7 @@ Type: `Number`<br>
 Required: `false`<br>
 Default: `200`
 
-Define the initial height of the component.
+定义组件的初始高度.
 
 ```html
 <vue-drag-resize :h="200">
@@ -263,7 +263,7 @@ Type: `Number`<br>
 Required: `false`<br>
 Default: `50`
 
-Define the minimal width of the component.
+定义组件的最小宽度.
 
 ```html
 <vue-drag-resize :minw="50">
@@ -274,7 +274,7 @@ Type: `Number`<br>
 Required: `false`<br>
 Default: `50`
 
-Define the minimal height of the component.
+定义组件的最小高度.
 
 ```html
 <vue-drag-resize :minh="50">
@@ -285,7 +285,7 @@ Type: `Number`<br>
 Required: `false`<br>
 Default: `0`
 
-Define the initial x position of the component.
+定义组件的初始x位置.
 
 ```html
 <vue-drag-resize :x="0">
@@ -296,7 +296,7 @@ Type: `Number`<br>
 Required: `false`<br>
 Default: `0`
 
-Define the initial y position of the component.
+定义组件的初始y位置.
 
 ```html
 <vue-drag-resize :y="0">
@@ -318,15 +318,16 @@ Type: `Array`<br>
 Required: `false`<br>
 Default: `['tl', 'tm', 'tr', 'mr', 'br', 'bm', 'bl', 'ml']`
 
-Define the array of handles to restrict the element resizing:
-* `tl` - Top left
-* `tm` - Top middle
-* `tr` - Top right
-* `mr` - Middle right
-* `br` - Bottom right
-* `bm` - Bottom middle
-* `bl` - Bottom left
-* `ml` - Middle left
+定义句柄数组以限制元素的大小调整：
+
+* tl - 左上方
+* tm -中上层
+* tr - 右上
+* mr -右中
+* br -右下
+* bm -底部中间
+* bl - 左下方
+* ml -左中
 
 ```html
 <vue-drag-resize :sticks="['tm','bm','ml','mr']">
@@ -337,7 +338,7 @@ Type: `String`<br>
 Required: `false`<br>
 Default: `both`
 
-Define the axis on which the element is draggable. Available values are `x`, `y`, `both` or `none`.
+定义可拖动元素的轴。可用的值是 `x`, `y`, `both` or `none`.
 
 ```html
 <vue-drag-resize axis="x">
@@ -347,7 +348,7 @@ Define the axis on which the element is draggable. Available values are `x`, `y`
 Type: `String`<br>
 Required: `false`
 
-Defines the selector that should be used to drag the component.
+定义用于拖动组件的选择器.
 
 ```html
 <vue-drag-resize dragHandle=".drag">
@@ -357,7 +358,7 @@ Defines the selector that should be used to drag the component.
 Type: `String`<br>
 Required: `false`
 
-Defines a selector that should be used to prevent drag initialization.
+定义一个应用于防止拖动初始化的选择器.
 
 ```html
 <vue-drag-resize dragCancel=".drag">
@@ -376,7 +377,7 @@ Defines a selector that should be used to prevent drag initialization.
 Required: `false`<br>
 Parameters: `Original event handler`
 
-Called whenever the component gets clicked.
+每当单击组件时调用.
 
 ```html
 <vue-drag-resize @clicked="onActivated">
@@ -387,7 +388,7 @@ Called whenever the component gets clicked.
 Required: `false`<br>
 Parameters: `-`
 
-Called whenever the component gets clicked, in order to show handles.
+每当显示组件时都单击该组件以调用它.
 
 ```html
 <vue-drag-resize @activated="onActivated">
@@ -398,7 +399,7 @@ Called whenever the component gets clicked, in order to show handles.
 Required: `false`<br>
 Parameters: `-`
 
-Called whenever the user clicks anywhere outside the component, in order to deactivate it.
+每当用户单击组件外部的任何位置以将其停用时都会调用.
 
 ```html
 <vue-drag-resize @deactivated="onDeactivated">
@@ -417,7 +418,7 @@ Parameters: `object`
 }
 ```
 
-Called whenever the component gets resized.
+每当调整组件大小时调用.
 
 ```html
 <vue-drag-resize @resizing="onResizing">
@@ -436,7 +437,7 @@ Parameters: `object`
 }
 ```
 
-Called whenever the component stops getting resized.
+每当组件停止调整大小时调用.
 
 ```html
 <vue-drag-resize @resizestop="onResizstop">
@@ -455,7 +456,7 @@ Parameters: `object`
 }
 ```
 
-Called whenever the component gets dragged.
+每当拖动组件时调用.
 
 ```html
 <vue-drag-resize @dragging="onDragging">
@@ -475,7 +476,7 @@ Parameters: `object`
 ```
 
 
-Called whenever the component stops getting dragged.
+每当组件停止拖动时调用.
 
 ```html
 <vue-drag-resize @dragstop="onDragstop">
