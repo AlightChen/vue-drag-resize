@@ -13,8 +13,8 @@
 * [安装和基本用法](#安装和基本用法)
   * [属性](#属性)
   * [事件](#事件)
-* [Contributing](#contributing)
-* [License](#license)
+* [贡献](#贡献)
+* [许可](#许可)
 
 ### Demo
 
@@ -98,7 +98,7 @@ Type: `Boolean`<br>
 Required: `false`<br>
 Default: `false`
 
-Determines whether the component should be active.
+确定组件是否应处于活动状态.
 
 ```html
 <vue-drag-resize :isActive="true">
@@ -109,8 +109,7 @@ Type: `Boolean`<br>
 Required: `false`<br>
 Default: `false`
 
-Disable behavior of the component by clicking on it and clicking outside the component's area (isActive: true / false).
-If the prop is enabled, the component is oriented only to the specified.
+通过单击组件并在组件区域之外单击来禁用组件的行为（isActive：true / false）。如果启用了prop，则组件仅针对指定的对象.
 
 ```html
 <vue-drag-resize :preventActiveBehavior="true">
@@ -121,8 +120,7 @@ Type: `Number`<br>
 Required: `false`<br>
 Default: `0`
 
-Define the initial width of the parent element. If not specified it calculated automatically.
-With this parameter, you can set the bounding area for the component, and also it is used when resizing in real time.
+定义父元素的初始宽度。如果未指定，则会自动计算。使用此参数，可以设置组件的边界区域，并且在实时调整大小时也会使用它.
 
 ```html
 <vue-drag-resize :parentW="2000">
@@ -133,8 +131,7 @@ Type: `Number`<br>
 Required: `false`<br>
 Default: `0`
 
-Define the initial height of the parent element. If not specified it calculated automatically.
-With this parameter, you can set the bounding area for the component, and also it is used when resizing in real time.
+定义父元素的初始高度。如果未指定，则会自动计算。使用此参数，可以设置组件的边界区域，并且在实时调整大小时也会使用它.
 
 ```html
 <vue-drag-resize :parentH="2000">
@@ -145,8 +142,7 @@ Type: `Number`<br>
 Required: `false`<br>
 Default: `1`
 
-Define the initial horizontal scale or the parent element. Same value in parent's transform: scale() css definition.
-The drag/resize and the sticks' sizes will computed with this value.
+定义初始水平比例尺或父元素。父级转换中的值相同：scale（）CSS定义。拖动/调整大小和操纵杆的大小将使用此值进行计算.
 
 ```html
 <vue-drag-resize :parentScaleX="0.5">
@@ -157,8 +153,7 @@ Type: `Number`<br>
 Required: `false`<br>
 Default: `1`
 
-Define the initial vertical scale or the parent element. Same value in parent's transform: scale() css definition.
-The drag/resize and the sticks' sizes will computed with this value.
+定义初始垂直比例或父元素。父级转换中的值相同：scale（）CSS定义。拖动/调整大小和操纵杆的大小将使用此值进行计算.
 
 ```html
 <vue-drag-resize :parentScaleY="0.5">
@@ -169,7 +164,7 @@ Type: `Boolean`<br>
 Required: `false`<br>
 Default: `true`
 
-Determines whether the component should draggable.
+确定组件是否应拖动.
 
 ```html
 <vue-drag-resize :isDraggable="false">
@@ -180,7 +175,7 @@ Type: `Boolean`<br>
 Required: `false`<br>
 Default: `true`
 
-Determines whether the component should resize.
+确定组件是否应调整大小.
 
 ```html
 <vue-drag-resize :isResizable="false">
@@ -486,7 +481,7 @@ Called whenever the component stops getting dragged.
 <vue-drag-resize @dragstop="onDragstop">
 ```
 
-## Contributing
+## 贡献
 
 Any contribution to the code or any part of the documentation and any idea and/or suggestion are very welcome.
 
@@ -499,6 +494,6 @@ npm run build
 
 ```
 
-## License
+## 许可
 
 [MIT license](LICENSE)
